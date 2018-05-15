@@ -99,6 +99,8 @@ public class MessageActivity extends AppCompatActivity {
         Log.e(TAG, "Message------>3");
         Log.e(TAG, "Message------>4");
         Log.e(TAG, "Message------>5");
+        Log.e(TAG, "Message------>6");
+        Log.e(TAG, "Message------>6");
     }
 
     private Emitter.Listener onConnect = new Emitter.Listener() {
@@ -114,6 +116,7 @@ public class MessageActivity extends AppCompatActivity {
                     JSONObject user = new JSONObject(map);
                     mSocket.emit(LOGIN, user);
                     Log.e(TAG, "---->" + user);
+
                 }
             });
         }
