@@ -94,6 +94,7 @@ public class MessageActivity extends AppCompatActivity {
         mSocket.emit(MSG, info);
         Log.e(TAG, "info---->" + info);
         Log.e(TAG, "Message------>" + mMessage);
+        Log.e(TAG, "Message------>");
     }
 
     private Emitter.Listener onConnect = new Emitter.Listener() {
